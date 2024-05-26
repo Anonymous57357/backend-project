@@ -45,4 +45,6 @@ const videoSchema = new mongoose.Schema(
 // 3rd package library
 videoSchema.plugin(mongooseAggregatePaginate);
 
+// for file upoad we can use multer or express file upload
+
 export const video = mongoose.model("Video", videoSchema);
